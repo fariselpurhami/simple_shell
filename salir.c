@@ -59,6 +59,6 @@ int salir(char *line, char *line2, int cont, char **com, char *name, int e)
 			}
 		}
 	}
-	
+
 	return (e);
 }
