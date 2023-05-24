@@ -38,7 +38,7 @@ int main(int ac, char **av)
 			continue;
 		}
 
-		line2 = _calloc(_strlen(line) + 1, sizeof(char));
+		line2 = malloc(strlen(line) + 1 * sizeof(char));
 		_cpy(line2, line);
 		com = split_command(line);
 
@@ -48,7 +48,7 @@ int main(int ac, char **av)
 			free(line), free(line2), free(com);
 			continue;
 		}
-		if (!_strcmp("exit", com[0]))
+		if (!strcmp("exit", com[0]))
 		{
 			e = salir(line, line2, cont, com, av[0], e);
 			if (e == 2)
