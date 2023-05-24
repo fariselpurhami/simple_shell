@@ -21,5 +21,6 @@ extern char **environ;
 char **split_command(char *line);
 void splitSpace(char *argv[], char line2[]);
 void split(char line2[], char *slicedCommand[], char c[]);
+int main(int ac, char **av);
 
 #endif /* SHELL_H */
